@@ -1,19 +1,19 @@
 .navbar {
-  height: 80px;
-  background-color: #95a5a6;
+  height: 59.45px;
+  background-color: transparent;
 }
 .navbar-container {
-  height: 80px;
+  /* height: 80px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-}
+} */
 .nav-logo {
   margin-left: 50px;
   cursor: pointer;
