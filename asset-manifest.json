@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-itb/static/css/main.463cafe9.css",
+    "main.js": "/react-itb/static/js/main.36ed78ae.js",
+    "static/media/kimsondoan.png": "/react-itb/static/media/kimsondoan.40b9f2b105b4b8572a3c.png",
+    "static/media/mainback.png": "/react-itb/static/media/mainback.ff497bf86103b464469c.png",
+    "static/media/mobileback.png": "/react-itb/static/media/mobileback.67bc87d78805772af0c0.png",
+    "index.html": "/react-itb/index.html",
+    "main.463cafe9.css.map": "/react-itb/static/css/main.463cafe9.css.map",
+    "main.36ed78ae.js.map": "/react-itb/static/js/main.36ed78ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.463cafe9.css",
+    "static/js/main.36ed78ae.js"
+  ]
+}
