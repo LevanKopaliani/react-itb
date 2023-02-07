@@ -16,8 +16,13 @@
 
     &-container {
       padding: 248px 63px 0 139px;
+      position: absolute;
+      z-index: 10;
       @media screen and (max-width: 1200px) {
-        padding: 150px 43px 47px 70px;
+        padding: 248px 43px 47px 70px;
+      }
+      @media screen and (max-width: 768px) {
+        position: relative;
       }
     }
 

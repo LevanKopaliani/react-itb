@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 const Applayout = () => {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <Outlet />
     </>
   );
