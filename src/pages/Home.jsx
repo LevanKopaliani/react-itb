@@ -1,8 +1,8 @@
 import "../styles/Home.scss";
-import HomePageImg from "../assets/img/homepageimg.png";
+import HomePageImg from "../assets/img/kimsondoan.png";
+import MobileImg from "../assets/img/mobileback.png";
 import ScrollDownImg from "../assets/img/scrolldownarrow.png";
 import PlayImg from "../assets/img/playimg.png";
-import GirlFace from "../assets/img/girlface.png";
 
 const Home = () => {
   return (
@@ -29,7 +29,8 @@ const Home = () => {
           </div>
         </div>
         <div className="homepage-section__img">
-          <img src={HomePageImg} alt="HomePageImg" />
+          <img className="desktopimg" src={HomePageImg} alt="HomePageImg" />
+          <img className="mobile-img" src={MobileImg} alt="mobileImg" />
           <div className="video-button">
             <div className="video-button__text">
               <p>The Credo Video</p>
