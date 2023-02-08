@@ -3,6 +3,7 @@ import HomePageImg from "../assets/img/kimsondoan.png";
 import MobileImg from "../assets/img/mobileback.png";
 import ScrollDownImg from "../assets/img/scrolldownarrow.png";
 import PlayImg from "../assets/img/playimg.png";
+import { SectionTwo } from "./SectionTwo";
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <SectionTwo />
     </main>
   );
 };
