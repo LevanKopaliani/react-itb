@@ -5,6 +5,7 @@ import "../styles/NavBar.scss";
 import { IconContext } from "react-icons";
 import MainButton from "../components/UI/MainButton";
 import Logo from "../assets/img/logowhite.png";
+import MenuOverlay from "./UI/MenuOverlay";
 
 const NavBar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -14,9 +15,15 @@ const NavBar = () => {
   const closeMobileMenu = () => {
     setMobileMenu(false);
   };
+  const [VisibleOverlay, setVisibleOverlay] = useState(false);
+
+  function handleCloseMenu() {
+    setVisibleOverlay(!VisibleOverlay);
+  }
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
+      {VisibleOverlay ? <MenuOverlay /> : ""}
       <div className="navbar">
         <div className="navbar-container wrapper">
           <div className="nav-logo">
@@ -100,7 +107,13 @@ const NavBar = () => {
               </div>
             )}
           </ul>
-          <div className="menu-button">
+          <div
+            className="menu-button"
+            onClick={() => {
+              setVisibleOverlay(true);
+              console.log("clicked");
+            }}
+          >
             <MainButton text={"Get In Touch"} />
           </div>
         </div>

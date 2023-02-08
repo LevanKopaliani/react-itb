@@ -6,7 +6,7 @@
   background-position: center;
   padding: 140px 0 150px 0;
   @media screen and (max-width: 480px) {
-    padding: 70px 0 750px 0;
+    padding: 70px 0 75px 0;
   }
 }
 .section-two-container {
@@ -19,6 +19,9 @@
     display: flex;
     @media screen and (max-width: 1080px) {
       flex-direction: column;
+      & .card-reverse {
+        order: 2;
+      }
     }
 
     &-info {
@@ -89,6 +92,7 @@
 .border-afterwrap {
   position: absolute;
   bottom: 0;
+  left: 0;
   height: 5px;
   width: 100%;
   background: linear-gradient(

@@ -25,7 +25,45 @@ export const SectionTwo = () => {
               </div>
               <div className="border-afterwrap"></div>
               <div className="card-img">
-                <img src={SectionTwoImg1} alt="image" />
+                <img src={SectionTwoImg1} alt="" />
+              </div>
+            </div>
+            <div className="card ">
+              <div className="card-img card-reverse">
+                <img src={SectionTwoImg2} alt="" />
+              </div>
+              <div className="card-info">
+                <div className="card-text">
+                  <h2>
+                    <p>02</p>Action
+                  </h2>
+                  <p>
+                    ITB believes knowledge is a universal right, not a privilege
+                    and actively collaborates daily to embrace and expand access
+                    to it for everyone, everywhere.
+                  </p>
+                </div>
+                <div className="border"></div>
+              </div>
+              <div className="border-afterwrap"></div>
+            </div>
+            <div className="card">
+              <div className="card-info">
+                <div className="card-text">
+                  <h2>
+                    <p>03</p>Change
+                  </h2>
+                  <p>
+                    ITB enables knowledge to inspire positive change that
+                    enriches individual lives, encourages deeper interaction
+                    and, ultimately, empowers each of us to be our best self.
+                  </p>
+                </div>
+                <div className="border"></div>
+              </div>
+              <div className="border-afterwrap"></div>
+              <div className="card-img">
+                <img src={SectionTwoImg3} alt="" />
               </div>
             </div>
           </div>

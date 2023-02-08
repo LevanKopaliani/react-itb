@@ -1,0 +1,194 @@
+.overlay {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 115px 0 53px 0;
+  position: absolute;
+  z-index: 9999;
+  background-color: black;
+  opacity: 0.85;
+  .overlay-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -78px; //37px
+    .CloseButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+      img {
+        width: 8px;
+        height: auto;
+      }
+    }
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+  }
+  .overlay-form {
+    max-width: 902px;
+    min-height: 573px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    @media screen and (max-width: 764px) {
+      flex-direction: column;
+    }
+
+    form {
+      position: relative;
+      font-family: "Proxima Nova", sans-serif;
+      padding: 48px 58px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 24px;
+      @media screen and (max-width: 480px) {
+        padding: 45px 30px;
+      }
+      .form-heading {
+        h2 {
+          font-weight: 500;
+          font-size: 50px;
+          line-height: 61px;
+        }
+
+        p {
+          margin-top: 15px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 145%;
+          color: #6d6d6d;
+        }
+        @media screen and (max-width: 480px) {
+          h2 {
+            font-size: 41px;
+            line-height: 110%;
+          }
+          p {
+            font-size: 16px;
+            line-height: 110%;
+          }
+        }
+      }
+
+      input,
+      textarea {
+        font-family: "Proxima Nova", sans-serif;
+        max-width: 260px;
+        border: 0;
+        border-bottom: 1.15px solid #434343;
+        padding: 6.63px 0;
+        font-weight: 400;
+        font-size: 13.74px;
+        line-height: 160%;
+        color: #9b9b9b;
+        &:focus {
+          outline: none;
+          border-color: #824ffb;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+      .textarea {
+        font-size: 16px;
+        line-height: 160%;
+      }
+      label {
+        color: #2d2d2d;
+        font-weight: 600;
+        font-size: 13.74px;
+        line-height: 160%;
+        @media screen and (max-width: 480px) {
+          font-size: 17px;
+        }
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+      .mainbutton {
+        margin-top: 9px;
+      }
+      .form-bottom-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          #1b468b 0%,
+          #824ffb 29.69%,
+          #f12492 60.42%,
+          #ff9021 100%
+        );
+      }
+    }
+  }
+  .form-info {
+    font-family: "Creato Display", sans-serif; // to cahnge
+    color: white;
+    max-width: 328px;
+    width: 100%;
+    background-image: url("./../assets/img/overlayback.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 764px) {
+      max-width: none;
+      min-height: 343px;
+      gap: 86px;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 61px;
+      @media screen and (max-width: 480px) {
+        font-size: 41px;
+        line-height: 110%;
+      }
+    }
+    p {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+      display: flex;
+      align-content: center;
+      gap: 21px;
+      @media screen and (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      padding: 60px 30px;
+    }
+    .contact-lnks p:last-child {
+      margin-top: 27px;
+    }
+    .social-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-bottom-border {
+    display: none;
+  }
+}
