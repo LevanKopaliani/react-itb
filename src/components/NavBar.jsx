@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -17,14 +18,19 @@ const NavBar = () => {
   };
   const [VisibleOverlay, setVisibleOverlay] = useState(false);
 
-  function handleCloseMenu() {
+  const handleToogleOverlay = () => {
     setVisibleOverlay(!VisibleOverlay);
-  }
+  };
+
+  useEffect(() => {
+    const navbar = document.getElementById("navbar").parentNode;
+    VisibleOverlay ? (navbar.className = "menu-open") : (navbar.className = "");
+  }, [VisibleOverlay]);
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
-      {VisibleOverlay ? <MenuOverlay /> : ""}
-      <div className="navbar">
+      {VisibleOverlay ? <MenuOverlay onPress={handleToogleOverlay} /> : ""}
+      <div className="navbar" id="navbar">
         <div className="navbar-container wrapper">
           <div className="nav-logo">
             <span>
@@ -107,14 +113,8 @@ const NavBar = () => {
               </div>
             )}
           </ul>
-          <div
-            className="menu-button"
-            onClick={() => {
-              setVisibleOverlay(true);
-              console.log("clicked");
-            }}
-          >
-            <MainButton text={"Get In Touch"} />
+          <div className="menu-button">
+            <MainButton text={"Get In Touch"} onPress={handleToogleOverlay} />
           </div>
         </div>
       </div>

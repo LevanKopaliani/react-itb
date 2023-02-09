@@ -47,7 +47,6 @@ const Home = () => {
         </div>
       </div>
       <SectionTwo />
-      <MenuOverlay />
     </main>
   );
 };

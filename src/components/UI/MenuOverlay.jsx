@@ -9,7 +9,7 @@ import Linkedin from "../../assets/img/linkedin.png";
 import Tweeter from "../../assets/img/twitter.png";
 import MainButton from "./MainButton";
 
-const MenuOverlay = () => {
+const MenuOverlay = ({ onPress }) => {
   return (
     <div className="overlay">
       <div className="wrapper">
@@ -18,7 +18,7 @@ const MenuOverlay = () => {
             <img src={Logo} alt="logo" />
           </div>
           <div className="CloseButton">
-            <img src={CloseButton} alt="CloseButton" />
+            <img src={CloseButton} alt="CloseButton" onClick={onPress} />
           </div>
         </div>
         <div className="form-container">
