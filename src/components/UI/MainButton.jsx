@@ -2,7 +2,7 @@ import "./MainButton.scss";
 
 const MainButton = ({ text, onPress }) => {
   return (
-    <div>
+    <div className="button-container">
       <button className="mainbutton" onClick={onPress}>
         {text}
       </button>

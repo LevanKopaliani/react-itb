@@ -1,0 +1,82 @@
+.SectionThree {
+  background-color: #191919;
+  //   min-height: 904px;
+  height: 100%;
+}
+.section-three-container {
+  display: flex;
+  padding: 165px 0;
+  justify-content: space-between;
+  //   align-items: center;
+  //   min-height: 904px;
+  @media screen and (max-width: 768px) {
+    padding: 70px 0;
+    flex-direction: column;
+  }
+}
+.section-three-info {
+  max-width: 403px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Creato Display", sans-serif;
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+  }
+  .before-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #9d9d9d;
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .title {
+    max-width: 371px;
+    margin-top: 8px;
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  .subtitle {
+    margin-top: 15px;
+    font-weight: 400;
+    color: #cacaca;
+    font-size: 16px;
+    line-height: 145%;
+  }
+  .mainbutton {
+    width: 250px;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  .button-container {
+    margin-top: 30px;
+  }
+  .button-container + .button-container {
+    margin-top: 26px;
+  }
+}
+.section-three-img {
+  max-height: 574px;
+  //   flex: 0 0 574px;
+  @media screen and (max-width: 768px) {
+    margin-top: 42px;
+  }
+  img {
+    max-height: 574px;
+    // height: 100%;
+    width: 100%;
+  }
+}

@@ -6,6 +6,7 @@ import PlayImg from "../assets/img/playimg.png";
 import { SectionTwo } from "./SectionTwo";
 import MenuOverlay from "../components/UI/MenuOverlay";
 import { useState } from "react";
+import SectionThree from "./SectionThree";
 
 const Home = () => {
   return (
@@ -47,6 +48,7 @@ const Home = () => {
         </div>
       </div>
       <SectionTwo />
+      <SectionThree />
     </main>
   );
 };
