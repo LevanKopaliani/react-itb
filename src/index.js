@@ -4,12 +4,14 @@ import "./index.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 const Applayout = () => {
   return (
     <>
       <NavBar />
       <Outlet />
+      <Footer />
     </>
   );
 };

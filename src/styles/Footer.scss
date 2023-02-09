@@ -1,0 +1,106 @@
+.footer {
+  min-height: 816px;
+  &-container {
+    padding: 242px 64px 183px 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    @media screen and (max-width: 480px) {
+      padding: 67px 0 0 0;
+    }
+    div,
+    ul {
+      padding: 0 16px;
+    }
+    .footer-logo {
+      position: relative;
+      img {
+        position: relative;
+        top: -39px;
+        @media screen and (max-width: 480px) {
+          top: 0;
+        }
+      }
+    }
+
+    .footer-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: #191919;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .newsletter {
+      label {
+        display: block;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        color: #191919;
+      }
+      input {
+        margin-top: 9px;
+        padding: 9px 0;
+        border: 0;
+        border-bottom: 1px solid #000;
+      }
+      .button-container {
+        padding: 0;
+        @media screen and (max-width: 480px) {
+          display: inline;
+          margin-left: 9px;
+        }
+      }
+      .mainbutton {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        @media screen and (max-width: 480px) {
+          width: 91px;
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28.5px;
+    padding: 0 64px 183px 64px;
+
+    @media screen and (max-width: 764px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 107px 0 88px 0;
+    }
+    &-text {
+      min-width: 250px;
+      display: flex;
+      flex: 1 1;
+      gap: 6px;
+
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      line-height: 15px;
+      @media screen and (max-width: 764px) {
+        justify-content: flex-start;
+      }
+    }
+    .social-links {
+      cursor: pointer;
+      display: flex;
+      gap: 20.5px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

@@ -46,16 +46,14 @@ code {
   font-style: normal;
   font-weight: 400;
   src: local("Creato Display"),
-    url("https://fonts.cdnfonts.com/s/57864/CreatoDisplay-Regular.woff")
-      format("woff");
+    url("./assets/fonts/CreatoDisplay-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Creato Display";
   font-style: normal;
   font-weight: 500;
   src: local("Creato Display"),
-    url("https://fonts.cdnfonts.com/s/57864/CreatoDisplay-Medium.woff")
-      format("woff");
+    url("./assets/fonts/CreatoDisplay-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -63,14 +61,12 @@ code {
   font-style: normal;
   font-weight: 400;
   src: local("Proxima Nova"),
-    url("https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Regular.woff")
-      format("woff");
+    url("./assets/fonts/Proxima-Nova-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 600;
   src: local("Proxima Nova"),
-    url("https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Semibold.woff")
-      format("woff");
+    url("./assets/fonts/Proxima-Nova-Semibold.woff") format("woff");
 }

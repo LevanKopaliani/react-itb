@@ -17,8 +17,8 @@ const MenuOverlay = ({ onPress }) => {
           <div className="logo">
             <img src={Logo} alt="logo" />
           </div>
-          <div className="CloseButton">
-            <img src={CloseButton} alt="CloseButton" onClick={onPress} />
+          <div className="CloseButton" onClick={onPress}>
+            <img src={CloseButton} alt="CloseButton" />
           </div>
         </div>
         <div className="form-container">

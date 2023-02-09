@@ -1,0 +1,74 @@
+.SectionFour {
+  position: relative;
+  min-height: 304px;
+  max-height: 811px;
+  width: 100%;
+  height: 100%;
+
+  //   max-height: 811px;
+  //   height: 100%;
+  //   background-image: url("./../assets/img/fourback.png");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  &-img {
+    display: block;
+    min-height: 304px;
+    max-height: 811px;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: soft-light;
+    // opacity: 0.35;
+  }
+  .playbutton {
+    top: 50%;
+    left: 50%;
+    width: 121px;
+    height: 121px;
+    transform: translate(-50%, -50%);
+    background: rgba(25, 25, 25, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    @media screen and (max-width: 764px) {
+      width: 71px;
+      height: 71px;
+      img {
+        width: 19px;
+        height: 19px;
+      }
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 33px;
+      height: 33px;
+      transform: translate(-50%, -50%);
+      @media screen and (max-width: 764px) {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 110px;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    text-transform: uppercase;
+    @media screen and (max-width: 764px) {
+      width: 218px;
+      margin-top: 85px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

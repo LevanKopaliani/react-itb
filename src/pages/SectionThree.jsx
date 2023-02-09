@@ -4,7 +4,7 @@ import MainButton from "../components/UI/MainButton";
 
 const SectionThree = () => {
   return (
-    <div className="SectionThree">
+    <section className="SectionThree">
       <div className="wrapper">
         <div className="container">
           <div className="section-three-container">
@@ -24,7 +24,7 @@ const SectionThree = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

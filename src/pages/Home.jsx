@@ -4,9 +4,8 @@ import MobileImg from "../assets/img/mobileback.png";
 import ScrollDownImg from "../assets/img/scrolldownarrow.png";
 import PlayImg from "../assets/img/playimg.png";
 import { SectionTwo } from "./SectionTwo";
-import MenuOverlay from "../components/UI/MenuOverlay";
-import { useState } from "react";
 import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
 
 const Home = () => {
   return (
@@ -49,6 +48,7 @@ const Home = () => {
       </div>
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </main>
   );
 };

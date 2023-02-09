@@ -47,6 +47,12 @@
   justify-content: center;
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #f12492;
+    transition: all 0.3s ease;
+  }
 }
 
 .menu-icon {
@@ -142,6 +148,7 @@
     font-size: 2rem;
   }
 }
+
 @media screen and (max-width: 480px) {
 }
 .menu-open {
