@@ -4,7 +4,7 @@ import FourBack from "./../assets/img/fourback.png";
 
 const SectionFour = () => {
   return (
-    <section className="SectionFour">
+    <section className="SectionFour" id="video">
       <img className="SectionFour-img" src={FourBack} alt="play" />
       <p className="playbutton">
         <img src={PlayButton} alt="p" />

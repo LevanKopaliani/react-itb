@@ -4,11 +4,15 @@ import MainButton from "../components/UI/MainButton";
 
 const SectionThree = () => {
   return (
-    <section className="SectionThree">
+    <section className="SectionThree" id="capabilities">
       <div className="wrapper">
         <div className="container">
           <div className="section-three-container">
-            <div className="section-three-info">
+            <div
+              className="section-three-info"
+              data-aos="fade-right"
+              data-aos-duration="1100"
+            >
               <p className="before-title">more about</p>
               <h2 className="title">Capabilities Deck</h2>
               <p className="subtitle">
@@ -18,8 +22,17 @@ const SectionThree = () => {
               <MainButton text={"Download VA Specific Deck"} />
               <MainButton text={"Download Healthcare Deck"} />
             </div>
-            <div className="section-three-img">
-              <img src={SectionThreeImg} alt="" />
+            <div
+              className="section-three-img"
+              data-aos="fade-left"
+              data-aos-duration="1100"
+            >
+              <img
+                src={SectionThreeImg}
+                alt=""
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+              />
             </div>
           </div>
         </div>

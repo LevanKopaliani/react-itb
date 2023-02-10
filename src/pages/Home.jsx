@@ -6,14 +6,25 @@ import PlayImg from "../assets/img/playimg.png";
 import { SectionTwo } from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import SectionFifth from "./SectionFifth";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <main className="homepage">
+    <main className="homepage" id="purpose">
       <div className="homepage-section">
         <div className="section-info">
           <div className="section-info-container">
-            <h1 className="section-info__title">
+            <h1
+              className="section-info__title"
+              data-aos="fade-right"
+              data-aos-duration="1100"
+            >
               Enable knowledge.
               <br /> Inspire positive change.
             </h1>
@@ -49,6 +60,7 @@ const Home = () => {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFifth />
     </main>
   );
 };

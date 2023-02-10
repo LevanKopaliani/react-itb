@@ -5,11 +5,11 @@ import SectionTwoImg3 from "../assets/img/sectiontwoimage3.png";
 
 export const SectionTwo = () => {
   return (
-    <section className="section-two">
+    <section className="section-two" id="offering">
       <div className="wrapper">
         <div className="container">
           <div className="section-two-container">
-            <div className="card">
+            <div className="card" data-aos="fade-left" data-aos-duration="1300">
               <div className="card-info">
                 <div className="card-text">
                   <h2>
@@ -28,7 +28,11 @@ export const SectionTwo = () => {
                 <img src={SectionTwoImg1} alt="" />
               </div>
             </div>
-            <div className="card ">
+            <div
+              className="card"
+              data-aos="fade-right"
+              data-aos-duration="1300"
+            >
               <div className="card-img card-reverse">
                 <img src={SectionTwoImg2} alt="" />
               </div>
@@ -47,7 +51,7 @@ export const SectionTwo = () => {
               </div>
               <div className="border-afterwrap"></div>
             </div>
-            <div className="card">
+            <div className="card" data-aos="fade-left" data-aos-duration="1300">
               <div className="card-info">
                 <div className="card-text">
                   <h2>

@@ -7,6 +7,8 @@ import { IconContext } from "react-icons";
 import MainButton from "../components/UI/MainButton";
 import Logo from "../assets/img/logowhite.png";
 import MenuOverlay from "./UI/MenuOverlay";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -60,7 +62,9 @@ const NavBar = () => {
                 }
                 onClick={closeMobileMenu}
               >
-                Our Purpose
+                <Link to="purpose" spy={true} smooth={true}>
+                  Our Purpose
+                </Link>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -71,7 +75,9 @@ const NavBar = () => {
                 }
                 onClick={closeMobileMenu}
               >
-                Our Offering
+                <Link to="offering" spy={true} smooth={true}>
+                  Our Offering
+                </Link>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -82,7 +88,9 @@ const NavBar = () => {
                 }
                 onClick={closeMobileMenu}
               >
-                Capabilities
+                <Link to="capabilities" spy={true} smooth={true}>
+                  Capabilities
+                </Link>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -93,7 +101,9 @@ const NavBar = () => {
                 }
                 onClick={closeMobileMenu}
               >
-                Manifesto Video
+                <Link to="video" spy={true} smooth={true}>
+                  Manifesto Video
+                </Link>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -104,7 +114,9 @@ const NavBar = () => {
                 }
                 onClick={closeMobileMenu}
               >
-                Our Founder
+                <Link to="founder" spy={true} smooth={true}>
+                  Our Founder
+                </Link>
               </NavLink>
             </li>
             {mobileMenu && (

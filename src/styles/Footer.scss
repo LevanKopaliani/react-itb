@@ -12,6 +12,9 @@
     div,
     ul {
       padding: 0 16px;
+      li {
+        cursor: pointer;
+      }
     }
     .footer-logo {
       position: relative;
