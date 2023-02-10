@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/react-itb/static/css/main.be0a9214.css",
-    "main.js": "/react-itb/static/js/main.8dc2f9ca.js",
-    "static/media/sectiontwoback.png": "/react-itb/static/media/sectiontwoback.b3786a8330342846b06a.png",
-    "static/media/sectionthree.png": "/react-itb/static/media/sectionthree.a25312936f66141109b8.png",
-    "static/media/fourback.png": "/react-itb/static/media/fourback.5201242998874e434d24.png",
-    "static/media/kimsondoan.png": "/react-itb/static/media/kimsondoan.40b9f2b105b4b8572a3c.png",
-    "static/media/sectiontwoimage1.png": "/react-itb/static/media/sectiontwoimage1.05fb4f7eb6f17f44b359.png",
-    "static/media/sectiontwoimage3.png": "/react-itb/static/media/sectiontwoimage3.d60e8e2b35a7ab8179e1.png",
-    "static/media/overlayback.png": "/react-itb/static/media/overlayback.ebcdfb58b25229695fb5.png",
-    "static/media/mainback.png": "/react-itb/static/media/mainback.ff497bf86103b464469c.png",
-    "static/media/sectiontwoimage2.png": "/react-itb/static/media/sectiontwoimage2.919f3f774ab8c553f90e.png",
-    "static/media/mobileback.png": "/react-itb/static/media/mobileback.67bc87d78805772af0c0.png",
+    "main.css": "/react-itb/static/css/main.bce54587.css",
+    "main.js": "/react-itb/static/js/main.3b78e121.js",
+    "static/media/sectionthree.png": "/react-itb/static/media/sectionthree.5aaae86d364b5af20e9a.png",
+    "static/media/sectiontwoback.png": "/react-itb/static/media/sectiontwoback.ef12631d4cf397f1b028.png",
+    "static/media/fourback.png": "/react-itb/static/media/fourback.33689fb54ea1ae30959b.png",
+    "static/media/mainback.png": "/react-itb/static/media/mainback.e3f031d1d576f92b6ef6.png",
+    "static/media/kimsondoan.png": "/react-itb/static/media/kimsondoan.aae487352bf210049eaa.png",
+    "static/media/founder.png": "/react-itb/static/media/founder.75c13b5a524b471cc07a.png",
+    "static/media/sectiontwoimage1.png": "/react-itb/static/media/sectiontwoimage1.e8d97209d0f036547764.png",
+    "static/media/sectiontwoimage3.png": "/react-itb/static/media/sectiontwoimage3.d24a7900da08bb33c778.png",
+    "static/media/sectiontwoimage2.png": "/react-itb/static/media/sectiontwoimage2.2f4ab464133f1816b4f8.png",
+    "static/media/overlayback.png": "/react-itb/static/media/overlayback.560fa4297ecd6744c240.png",
+    "static/media/mobileback.png": "/react-itb/static/media/mobileback.8c4396e9520bfed305e8.png",
     "static/media/Proxima-Nova-Regular.woff": "/react-itb/static/media/Proxima-Nova-Regular.59124d9ac7201d2e644a.woff",
     "static/media/Proxima-Nova-Semibold.woff": "/react-itb/static/media/Proxima-Nova-Semibold.d9e022d8b2fb30e9fc3c.woff",
     "static/media/CreatoDisplay-Regular.woff": "/react-itb/static/media/CreatoDisplay-Regular.0b1215cf400a22d1ef17.woff",
     "static/media/CreatoDisplay-Medium.woff": "/react-itb/static/media/CreatoDisplay-Medium.1d344a006c0152d2910e.woff",
+    "static/media/fifthsmallimage.png": "/react-itb/static/media/fifthsmallimage.56ba502ad33c14f4d735.png",
     "index.html": "/react-itb/index.html",
-    "main.be0a9214.css.map": "/react-itb/static/css/main.be0a9214.css.map",
-    "main.8dc2f9ca.js.map": "/react-itb/static/js/main.8dc2f9ca.js.map"
+    "main.bce54587.css.map": "/react-itb/static/css/main.bce54587.css.map",
+    "main.3b78e121.js.map": "/react-itb/static/js/main.3b78e121.js.map"
   },
   "entrypoints": [
-    "static/css/main.be0a9214.css",
-    "static/js/main.8dc2f9ca.js"
+    "static/css/main.bce54587.css",
+    "static/js/main.3b78e121.js"
   ]
 }
