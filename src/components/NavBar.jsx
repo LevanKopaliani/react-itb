@@ -11,6 +11,16 @@ import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
+  //
+  const [scrollTop, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setScrollTop(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, [scrollTop]);
+  //////    Scroll          ////////////
   const [mobileMenu, setMobileMenu] = useState(false);
   const toogleMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -22,17 +32,29 @@ const NavBar = () => {
 
   const handleToogleOverlay = () => {
     setVisibleOverlay(!VisibleOverlay);
+    setMobileMenu(false);
   };
 
   useEffect(() => {
     const navbar = document.getElementById("navbar").parentNode;
-    VisibleOverlay ? (navbar.className = "menu-open") : (navbar.className = "");
+    VisibleOverlay
+      ? (navbar.classList.value = `${navbar.classList.value} menuoverlay-open`)
+      : navbar.classList.remove("menuoverlay-open");
   }, [VisibleOverlay]);
+  useEffect(() => {
+    const navbar = document.getElementById("navbar").parentNode;
+    mobileMenu
+      ? (navbar.classList.value = `${navbar.classList.value} menu-open`)
+      : navbar.classList.remove("menu-open");
+  }, [mobileMenu]);
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
       {VisibleOverlay ? <MenuOverlay onPress={handleToogleOverlay} /> : ""}
-      <div className="navbar" id="navbar">
+      <div
+        className={scrollTop > 38 ? "navbar sticky-nav" : "navbar"}
+        id="navbar"
+      >
         <div className="navbar-container wrapper">
           <div className="nav-logo">
             <span>
@@ -56,72 +78,100 @@ const NavBar = () => {
 
             <li className="nav-item before">
               <NavLink
-                to="/"
+                to="/purpose"
                 className={({ isActive }) =>
                   isActive ? "nav-links activated" : "nav-links"
                 }
-                onClick={closeMobileMenu}
               >
-                <Link to="purpose" spy={true} smooth={true}>
+                <Link
+                  activeClass="activated"
+                  to="purpose"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMobileMenu}
+                >
                   Our Purpose
                 </Link>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/offering"
                 className={({ isActive }) =>
                   isActive ? "nav-links activated" : "nav-links"
                 }
-                onClick={closeMobileMenu}
               >
-                <Link to="offering" spy={true} smooth={true}>
+                <Link
+                  activeClass="activated"
+                  to="offering"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMobileMenu}
+                >
                   Our Offering
                 </Link>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/capabilities"
                 className={({ isActive }) =>
                   isActive ? "nav-links activated" : "nav-links"
                 }
-                onClick={closeMobileMenu}
               >
-                <Link to="capabilities" spy={true} smooth={true}>
+                <Link
+                  activeClass="activated"
+                  to="capabilities"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMobileMenu}
+                >
                   Capabilities
                 </Link>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/video"
                 className={({ isActive }) =>
                   isActive ? "nav-links activated" : "nav-links"
                 }
-                onClick={closeMobileMenu}
               >
-                <Link to="video" spy={true} smooth={true}>
+                <Link
+                  activeClass="activated"
+                  to="video"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMobileMenu}
+                >
                   Manifesto Video
                 </Link>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/founder"
                 className={({ isActive }) =>
                   isActive ? "nav-links activated" : "nav-links"
                 }
-                onClick={closeMobileMenu}
               >
-                <Link to="founder" spy={true} smooth={true}>
+                <Link
+                  activeClass="activated"
+                  to="founder"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMobileMenu}
+                >
                   Our Founder
                 </Link>
               </NavLink>
             </li>
             {mobileMenu && (
               <div className="mobile-menu-button">
-                <MainButton text={"Get In Touch"} />
+                <MainButton
+                  text={"Get In Touch"}
+                  onPress={handleToogleOverlay}
+                />
               </div>
             )}
           </ul>

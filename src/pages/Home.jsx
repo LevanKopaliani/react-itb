@@ -8,16 +8,17 @@ import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import SectionFifth from "./SectionFifth";
+import { Link } from "react-scroll";
 
 const Home = () => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <main className="homepage" id="purpose">
-      <div className="homepage-section">
+    <main className="homepage">
+      <div className="homepage-section" id="purpose">
         <div className="section-info">
           <div className="section-info-container">
             <h1
@@ -35,10 +36,16 @@ const Home = () => {
               Human elevation.
             </p>
             <div className="scroll-down">
-              <p>Scroll Down</p>
               <p>
-                <img src={ScrollDownImg} alt="ScrollDownImg" />
+                <Link to="video" spy={true} smooth={true}>
+                  Scroll Down
+                </Link>
               </p>
+              <Link to="video" spy={true} smooth={true}>
+                <p>
+                  <img src={ScrollDownImg} alt="ScrollDownImg" />
+                </p>
+              </Link>
             </div>
           </div>
         </div>
