@@ -17,7 +17,7 @@ const SectionFifth = () => {
             </div>
             <div
               className="section-fifth-info"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1100"
             >
               <h2 className="title">

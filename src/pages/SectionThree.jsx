@@ -22,11 +22,7 @@ const SectionThree = () => {
               <MainButton text={"Download VA Specific Deck"} />
               <MainButton text={"Download Healthcare Deck"} />
             </div>
-            <div
-              className="section-three-img"
-              data-aos="fade-left"
-              data-aos-duration="1100"
-            >
+            <div className="section-three-img">
               <img
                 src={SectionThreeImg}
                 alt=""

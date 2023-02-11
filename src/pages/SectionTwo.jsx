@@ -9,7 +9,7 @@ export const SectionTwo = () => {
       <div className="wrapper">
         <div className="container">
           <div className="section-two-container">
-            <div className="card" data-aos="fade-left" data-aos-duration="1300">
+            <div className="card" data-aos="fade-up" data-aos-duration="1300">
               <div className="card-info">
                 <div className="card-text">
                   <h2>
@@ -28,11 +28,7 @@ export const SectionTwo = () => {
                 <img src={SectionTwoImg1} alt="" />
               </div>
             </div>
-            <div
-              className="card"
-              data-aos="fade-right"
-              data-aos-duration="1300"
-            >
+            <div className="card" data-aos="fade-up" data-aos-duration="1300">
               <div className="card-img card-reverse">
                 <img src={SectionTwoImg2} alt="" />
               </div>
@@ -51,7 +47,7 @@ export const SectionTwo = () => {
               </div>
               <div className="border-afterwrap"></div>
             </div>
-            <div className="card" data-aos="fade-left" data-aos-duration="1300">
+            <div className="card" data-aos="fade-up" data-aos-duration="1300">
               <div className="card-info">
                 <div className="card-text">
                   <h2>
